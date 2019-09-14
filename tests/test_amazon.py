@@ -41,11 +41,11 @@ class TestAMZNSearch(TestBase):
     #     self.CartPage = CartPage(self.driver)
     #     self.CartPage.delete_item()
     #
-    # @pytest.mark.base
-    # def test_sign_in_screen(self):
-    #     self.signInScreen = SignInPage(self.driver)
-    #     self.signInScreen.sign_in_failed()
-    #     self.signInScreen.assert_element_text(Locators.SIGN_IN_LOCATOR_ALERT, TestData.ALERT_SIGN_IN_SCREEN)
+    @pytest.mark.base
+    def test_sign_in_screen(self):
+        self.signInScreen = SignInPage(self.driver)
+        self.signInScreen.sign_in_failed()
+        self.signInScreen.assert_element_text(Locators.SIGN_IN_LOCATOR_ALERT, TestData.ALERT_SIGN_IN_SCREEN)
 
     #
     # def test_imdb_home_page(self):
