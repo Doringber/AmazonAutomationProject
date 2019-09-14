@@ -1,0 +1,80 @@
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52743/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:52743
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52743 "POST /session HTTP/1.1" 200 901
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52743/session/b305386317aa8168ef1be338575b39a8/url {"url": "https://www.amazon.in", "sessionId": "b305386317aa8168ef1be338575b39a8"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52743 "POST /session/b305386317aa8168ef1be338575b39a8/url HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52743/session/b305386317aa8168ef1be338575b39a8/timeouts/implicit_wait {"ms": 5000.0, "sessionId": "b305386317aa8168ef1be338575b39a8"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52743 "POST /session/b305386317aa8168ef1be338575b39a8/timeouts/implicit_wait HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:52743/session/b305386317aa8168ef1be338575b39a8/cookie {"sessionId": "b305386317aa8168ef1be338575b39a8"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52743 "DELETE /session/b305386317aa8168ef1be338575b39a8/cookie HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:52743/session/b305386317aa8168ef1be338575b39a8/window {"sessionId": "b305386317aa8168ef1be338575b39a8"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52743 "DELETE /session/b305386317aa8168ef1be338575b39a8/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52821/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:52821
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52821 "POST /session HTTP/1.1" 200 901
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52821/session/3ac54fab73a98c7956cb6b1c9f69791c/url {"url": "https://www.amazon.in", "sessionId": "3ac54fab73a98c7956cb6b1c9f69791c"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52821 "POST /session/3ac54fab73a98c7956cb6b1c9f69791c/url HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52821/session/3ac54fab73a98c7956cb6b1c9f69791c/timeouts/implicit_wait {"ms": 5000.0, "sessionId": "3ac54fab73a98c7956cb6b1c9f69791c"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52821 "POST /session/3ac54fab73a98c7956cb6b1c9f69791c/timeouts/implicit_wait HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:52821/session/3ac54fab73a98c7956cb6b1c9f69791c/cookie {"sessionId": "3ac54fab73a98c7956cb6b1c9f69791c"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52821 "DELETE /session/3ac54fab73a98c7956cb6b1c9f69791c/cookie HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:52821/session/3ac54fab73a98c7956cb6b1c9f69791c/window {"sessionId": "3ac54fab73a98c7956cb6b1c9f69791c"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52821 "DELETE /session/3ac54fab73a98c7956cb6b1c9f69791c/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52929/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:52929
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52929 "POST /session HTTP/1.1" 200 901
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52929/session/6c1e22886be30b7e162853f7fb0e7ba3/url {"url": "https://www.amazon.in", "sessionId": "6c1e22886be30b7e162853f7fb0e7ba3"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52929 "POST /session/6c1e22886be30b7e162853f7fb0e7ba3/url HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52929/session/6c1e22886be30b7e162853f7fb0e7ba3/timeouts/implicit_wait {"ms": 5000.0, "sessionId": "6c1e22886be30b7e162853f7fb0e7ba3"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52929 "POST /session/6c1e22886be30b7e162853f7fb0e7ba3/timeouts/implicit_wait HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:52929/session/6c1e22886be30b7e162853f7fb0e7ba3/cookie {"sessionId": "6c1e22886be30b7e162853f7fb0e7ba3"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52929 "DELETE /session/6c1e22886be30b7e162853f7fb0e7ba3/cookie HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:52929/session/6c1e22886be30b7e162853f7fb0e7ba3/window {"sessionId": "6c1e22886be30b7e162853f7fb0e7ba3"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:52929 "DELETE /session/6c1e22886be30b7e162853f7fb0e7ba3/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63117/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:63117
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63117 "POST /session HTTP/1.1" 200 901
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63117/session/0ba7610f62f230a9e4c19e0a3b38dd37/url {"url": "https://www.amazon.in", "sessionId": "0ba7610f62f230a9e4c19e0a3b38dd37"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63117 "POST /session/0ba7610f62f230a9e4c19e0a3b38dd37/url HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63117/session/0ba7610f62f230a9e4c19e0a3b38dd37/timeouts/implicit_wait {"ms": 5000.0, "sessionId": "0ba7610f62f230a9e4c19e0a3b38dd37"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63117 "POST /session/0ba7610f62f230a9e4c19e0a3b38dd37/timeouts/implicit_wait HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:63117/session/0ba7610f62f230a9e4c19e0a3b38dd37/cookie {"sessionId": "0ba7610f62f230a9e4c19e0a3b38dd37"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63117 "DELETE /session/0ba7610f62f230a9e4c19e0a3b38dd37/cookie HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:63117/session/0ba7610f62f230a9e4c19e0a3b38dd37/window {"sessionId": "0ba7610f62f230a9e4c19e0a3b38dd37"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63117 "DELETE /session/0ba7610f62f230a9e4c19e0a3b38dd37/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

@@ -1,0 +1,84 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/login HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/login HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/login HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/login HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/login HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/login HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/login HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64244/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:64244
+DEBUG:urllib3.connectionpool:http://127.0.0.1:64244 "POST /session HTTP/1.1" 200 901
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64244/session/88cb7ea14e566a1e8098400f05c331fe/url {"url": "https://www.amazon.in", "sessionId": "88cb7ea14e566a1e8098400f05c331fe"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:64244 "POST /session/88cb7ea14e566a1e8098400f05c331fe/url HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64244/session/88cb7ea14e566a1e8098400f05c331fe/timeouts/implicit_wait {"ms": 5000.0, "sessionId": "88cb7ea14e566a1e8098400f05c331fe"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:64244 "POST /session/88cb7ea14e566a1e8098400f05c331fe/timeouts/implicit_wait HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:64244/session/88cb7ea14e566a1e8098400f05c331fe/cookie {"sessionId": "88cb7ea14e566a1e8098400f05c331fe"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:64244 "DELETE /session/88cb7ea14e566a1e8098400f05c331fe/cookie HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:64244/session/88cb7ea14e566a1e8098400f05c331fe/window {"sessionId": "88cb7ea14e566a1e8098400f05c331fe"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:64244 "DELETE /session/88cb7ea14e566a1e8098400f05c331fe/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64643/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:64643
+DEBUG:urllib3.connectionpool:http://127.0.0.1:64643 "POST /session HTTP/1.1" 200 901
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64643/session/9254a124e22f1129a48dec51c19253fd/url {"url": "https://www.amazon.in", "sessionId": "9254a124e22f1129a48dec51c19253fd"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:64643 "POST /session/9254a124e22f1129a48dec51c19253fd/url HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64643/session/9254a124e22f1129a48dec51c19253fd/timeouts/implicit_wait {"ms": 5000.0, "sessionId": "9254a124e22f1129a48dec51c19253fd"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:64643 "POST /session/9254a124e22f1129a48dec51c19253fd/timeouts/implicit_wait HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:64643/session/9254a124e22f1129a48dec51c19253fd/cookie {"sessionId": "9254a124e22f1129a48dec51c19253fd"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:64643 "DELETE /session/9254a124e22f1129a48dec51c19253fd/cookie HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
+DEBUG:urllib3.connectionpool:https://reqres.in:443 "POST /api/login HTTP/1.1" 200 29
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:64643/session/9254a124e22f1129a48dec51c19253fd/window {"sessionId": "9254a124e22f1129a48dec51c19253fd"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:64643 "DELETE /session/9254a124e22f1129a48dec51c19253fd/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

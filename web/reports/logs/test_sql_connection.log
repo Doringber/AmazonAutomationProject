@@ -1,0 +1,28 @@
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"appium:udid": "821e977f0804", "platformName": "android", "appium:deviceName": "Mi A1", "appium:appActivity": ".HomeActivity", "appium:appPackage": "com.imdb.mobile", "appium:noReset": "true", "appium:autoAcceptAlerts": "true"}]}, "desiredCapabilities": {"udid": "821e977f0804", "platformName": "android", "deviceName": "Mi A1", "appActivity": ".HomeActivity", "appPackage": "com.imdb.mobile", "noReset": "true", "autoAcceptAlerts": "true"}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 500 601
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:59366/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:59366
+DEBUG:urllib3.connectionpool:http://127.0.0.1:59366 "POST /session HTTP/1.1" 200 901
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:59366/session/1b544a80446129636e1a9f2c18d2f480/window {"sessionId": "1b544a80446129636e1a9f2c18d2f480"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:59366 "DELETE /session/1b544a80446129636e1a9f2c18d2f480/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:59366/session/1b544a80446129636e1a9f2c18d2f480/window {"sessionId": "1b544a80446129636e1a9f2c18d2f480"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:59366 "DELETE /session/1b544a80446129636e1a9f2c18d2f480/window HTTP/1.1" 200 188
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:59771/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:59771
+DEBUG:urllib3.connectionpool:http://127.0.0.1:59771 "POST /session HTTP/1.1" 200 901
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:59771/session/49623ef7d49405771c634d864be82a6e/window {"sessionId": "49623ef7d49405771c634d864be82a6e"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:59771 "DELETE /session/49623ef7d49405771c634d864be82a6e/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:59854/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:59854
+DEBUG:urllib3.connectionpool:http://127.0.0.1:59854 "POST /session HTTP/1.1" 200 901
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:59854/session/7e7a3ba9c43effeb5993c5e71f43a14f/window {"sessionId": "7e7a3ba9c43effeb5993c5e71f43a14f"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:59854 "DELETE /session/7e7a3ba9c43effeb5993c5e71f43a14f/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
