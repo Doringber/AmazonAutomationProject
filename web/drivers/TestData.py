@@ -1,5 +1,6 @@
 class TestData():
-    # --- drivers ---
+    # --- drivers --- #
+    """API,Chrome,FireFox,Safari"""
     BROWSER_TYPE = "chrome"
     FIREFOX_EXECUTABLE_PATH = "/Users/doringber/Downloads/geckodriver"
     CHROME_EXECUTABLE_PATH= "/Users/doringber/Downloads/Chrome_Downloads/chromedriver"

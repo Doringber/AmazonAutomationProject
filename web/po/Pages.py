@@ -9,6 +9,7 @@ from amazon.web.po.actions import Actions
 from amazon.web.resources import csv_reader
 from amazon.web.resources.Locators import Locators
 from amazon.web.drivers.TestData import TestData
+from amazon.web.resources.csv_reader import CsveReader
 
 
 class HomePage(Actions):
@@ -107,17 +108,23 @@ class SignInPage(Actions):
         super().__init__(driver)
 
     def sign_in_failed(self):
-        print(colored('Step 1: Click on the sign in button ', 'blue'))
-        self.click(Locators.SIGN_IN_HOME_SCREEN_BUTTON)
+        login_name = CsveReader.read(self,'/Users/doringber/PycharmProjects/homework/amazon/web/resources/login.csv')
 
-        print(colored('Step 2: Enter text to the email filed  ', 'blue'))
-        self.enter_text(Locators.USER_EMAIL_OR_MOBIL_NO_TEXTBOX, "Just testing")
+        for i in range(4):
+            print(colored('Step 1: Click on the sign in button ', 'blue'))
+            self.click(Locators.SIGN_IN_HOME_SCREEN_BUTTON)
 
-        print(colored('Step 3: Press continue button  ', 'blue'))
-        self.click(Locators.CONTINUE_BUTTON)
-        time.sleep(2)
+            print(colored('Step 2: Click on the inner sign in button ', 'blue'))
+            self.click(Locators.SIGN_IN_INNER_BUTTON)
 
-        print(colored('Step 4: Verify there is error massage', 'blue'))
+            print(colored('Step 3: Enter text to the email filed  ', 'blue'))
+            self.enter_text(Locators.USER_EMAIL_OR_MOBIL_NO_TEXTBOX,login_name[i])
+
+            print(colored('Step 4: Press continue button  ', 'blue'))
+            self.click(Locators.CONTINUE_BUTTON)
+            time.sleep(2)
+
+            print(colored('Step 5: Verify there is error massage', 'blue'))
 
 
 class ImdbHomePage(Actions):
@@ -167,10 +174,8 @@ class SqlText(Actions):
         self.click(Locators.SEARCH_SUBMIT_BUTTON)
 
     def csv_devices_test(self):
-        devices = csv_reader.list
-        # list1 = ['1', '2', '3']
-        # str1 = '[]'.join(devices)
-        # print(str1)
+        devices = CsveReader.read(self,'/Users/doringber/PycharmProjects/homework/amazon/web/resources/devices.csv')
+        print(devices)
 
         for i in range(len(devices)):
 
@@ -179,6 +184,8 @@ class SqlText(Actions):
 
             print(colored('Step 2: Press on submit button ', 'blue'))
             self.click(Locators.SEARCH_SUBMIT_BUTTON)
+
+            print(colored('Step 3: Verify %s not None ', 'blue') % self.driver.find_element(*Locators.RESULT_SCREEN_SQL).text)
             self.assertIsNotNone(self.driver.find_element(*Locators.RESULT_SCREEN_SQL).text)
             self.driver.execute_script("window.history.go(-1)")
 

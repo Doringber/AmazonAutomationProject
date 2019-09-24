@@ -31,7 +31,10 @@ class TestBase(unittest.TestCase):
             self.driver.implicitly_wait(5)
             self.driver.delete_all_cookies()
         else:
-            print("The tests are set on Appuim or API")
+            if TestData.BROWSER_TYPE.lower() == 'appium':
+                print(colored('TestData is set to Appium', 'blue'))
+            elif TestData.BROWSER_TYPE.lower() == 'api':
+                print(colored('TestData is set to API', 'blue'))
 
     def tearDown(self):
         print(colored(MESSAGE_TEST_FINISHED_RUNNING % self._testMethodName, "green"))

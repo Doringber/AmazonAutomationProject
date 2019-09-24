@@ -1,4 +1,3 @@
-"""API Url"""
 import json
 
 import jsonpath as jsonpath

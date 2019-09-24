@@ -37,6 +37,7 @@ class Actions(TestBase):
 
     def enter_text(self, by_locator, text):
         try:
+            WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator)).clear()
             item = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator)).send_keys(text)
             logging.debug("Element with locator %s was enter text:  %s" % (by_locator, text))
             return item

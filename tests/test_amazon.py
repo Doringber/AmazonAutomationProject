@@ -7,7 +7,7 @@ from amazon.web.po.base import TestBase
 from amazon.web.resources.Locators import Locators
 from amazon.web.drivers.TestData import TestData
 from amazon.web.po.Pages import SignInPage, \
-    SqlText, HoverItems, CartPage
+    SqlText, HoverItems, CartPage, ImdbHomePage
 
 
 class TestAMZNSearch(TestBase):
@@ -47,10 +47,10 @@ class TestAMZNSearch(TestBase):
         self.signInScreen.sign_in_failed()
         self.signInScreen.assert_element_text(Locators.SIGN_IN_LOCATOR_ALERT, TestData.ALERT_SIGN_IN_SCREEN)
 
-    #
-    # def test_imdb_home_page(self):
-    #     self.ImdbHomePage = ImdbHomePage(self.driver)
-    #     self.ImdbHomePage.search_text_and_click()
+    """ Appium Test """
+    def test_imdb_home_page(self):
+        self.ImdbHomePage = ImdbHomePage(self.driver)
+        self.ImdbHomePage.search_text_and_click()
 
     @pytest.mark.base
     def test_sql_enter_text_pixel(self):

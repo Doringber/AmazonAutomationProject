@@ -30,6 +30,7 @@ class Locators():
     # --- Signin Page Locators ---
     USER_EMAIL_OR_MOBIL_NO_TEXTBOX=(By.ID,"ap_email")
     SIGN_IN_HOME_SCREEN_BUTTON = (By.ID,"nav-link-accountList")
+    SIGN_IN_INNER_BUTTON = (By.XPATH,"//div[@id='nav-flyout-ya-signin']//span[@class='nav-action-inner'][contains(text(),'Sign in')]")
     CONTINUE_BUTTON = (By.ID,"continue")
     SIGN_IN_LOCATOR_ALERT = (By.CLASS_NAME,"a-alert-heading")
     EMPTY_CART_SCREEN_LOCATOR = (By.CLASS_NAME,"sc-empty-cart-header")
