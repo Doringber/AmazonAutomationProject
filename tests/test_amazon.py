@@ -2,11 +2,11 @@ import unittest
 
 import pytest
 
-from amazon.web.po.api_actions import ApiActions
-from amazon.web.po.base import TestBase
+from amazon.web.page_object.api_actions import ApiActions
+from amazon.web.page_object.base_class import TestBase
 from amazon.web.resources.Locators import Locators
-from amazon.web.drivers.TestData import TestData
-from amazon.web.po.Pages import SignInPage, \
+from amazon.web.drivers.tests_data import TestData
+from amazon.web.page_object.pages import SignInPage, \
     SqlText, HoverItems, CartPage, ImdbHomePage
 
 
@@ -48,9 +48,9 @@ class TestAMZNSearch(TestBase):
         self.signInScreen.assert_element_text(Locators.SIGN_IN_LOCATOR_ALERT, TestData.ALERT_SIGN_IN_SCREEN)
 
     """ Appium Test """
-    def test_imdb_home_page(self):
-        self.ImdbHomePage = ImdbHomePage(self.driver)
-        self.ImdbHomePage.search_text_and_click()
+    # def test_imdb_home_page(self):
+    #     self.ImdbHomePage = ImdbHomePage(self.driver)
+    #     self.ImdbHomePage.search_text_and_click()
 
     @pytest.mark.base
     def test_sql_enter_text_pixel(self):
@@ -58,27 +58,29 @@ class TestAMZNSearch(TestBase):
         self.sqlText.sql_search_text_pixel()
         self.assertEqual(self.driver.find_element(*Locators.RESULT_SCREEN_SQL).text, '"Pixel"')
     #
-    # def test_sql_enter_text_redmi(self):
-    #     self.sqlText = SqlText(self.driver)
-    #     self.sqlText.sql_search_text_redmi()
-    #     self.assertEqual(self.driver.find_element(*Locators.RESULT_SCREEN_SQL).text, '"redmi 6"')
+    def test_sql_enter_text_redmi(self):
+        self.sqlText = SqlText(self.driver)
+        self.sqlText.sql_search_text_redmi()
+        self.assertEqual(self.driver.find_element(*Locators.RESULT_SCREEN_SQL).text, '"redmi 6"')
 
     def test_csv_device(self):
         self.sqlText = SqlText(self.driver)
         self.sqlText.csv_devices_test()
 
-    @pytest.mark.base
-    def test_hover_items(self):
-        self.hover = HoverItems(self.driver)
-        self.hover.hover_between_items()
+    # @pytest.mark.base
+    # def test_hover_items(self):
+    #     self.hover = HoverItems(self.driver)
+    #     self.hover.hover_between_items()
 
     def test_get_request(self):
         self.api = ApiActions()
         self.api.get_request(TestData.API_URL_GET)
+        self.assertEqual(self.api.get_request(TestData.API_URL_GET), None, "There is problem with the URL")
 
     def test_post_request(self):
         self.api = ApiActions()
-        self.api.post_request(TestData.API_URL_POST)
+        var = self.api.post_request(TestData.API_URL_POST)
+        self.assertEqual(var, 1, "You Token return as false ")
 
 
 if __name__ == '__main__':

@@ -3,8 +3,8 @@ class TestData():
     """API,Chrome,FireFox,Safari"""
     BROWSER_TYPE = "chrome"
     FIREFOX_EXECUTABLE_PATH = "/Users/doringber/Downloads/geckodriver"
-    CHROME_EXECUTABLE_PATH= "/Users/doringber/Downloads/Chrome_Downloads/chromedriver"
-
+    # CHROME_EXECUTABLE_PATH= "/Users/doringber/Downloads/Chrome_Downloads/chromedriver"
+    CHROME_EXECUTABLE_PATH ="/usr/local/bin/chromedriver"
     # --- URL ---
     BASE_URL = "https://www.amazon.in"
 
@@ -31,6 +31,11 @@ class TestData():
     # --- API ---
     API_URL_GET = "https://reqres.in/api/users?page=2"
     API_URL_POST = "https://reqres.in/api/login"
+
+    # --- PATHS ---
+    SCREEN_PATH = '/Users/doringber/PycharmProjects/homework/amazon/web/reports/screenshots'
+    LOGGING_PATH = "/Users/doringber/PycharmProjects/homework/amazon/web/reports/logs/"
+
 
 
 

@@ -9,38 +9,41 @@ updateUrl = "https://reqres.in/api/users/2"
 class ApiActions:
     def get_request(self, url):
         """Send GET request"""
-        try:
-            respone = requests.get(url)
-            if respone.status_code == 200:
-                json_response = json.loads(respone.text)
-                print(json_response)
+        respone = requests.get(url)
+        if respone.status_code == 400:
+            json_response = json.loads(respone.text)
+            print(json_response)
 
-                pages = jsonpath.jsonpath(json_response, "total_pages")
-                assert pages[0] == 2
+            pages = jsonpath.jsonpath(json_response, "total_pages")
+            assert pages[0] == 2
 
-        except Exception as error:
-            print(error)
+        else:
+            return None
+
+
 
     def post_request(self, url):
-        try:
             login = {
                 "email": "eve.holt@reqres.in",
                 "password": "cityslicka"
             }
             post = requests.post(url, login)
-            if post.status_code == 200:
+            # if post.status_code == 200:
                 # print(post)
-                json_response = json.loads(post.text)
-                # print(json_response)
+            json_response = json.loads(post.text)
+            # print(json_response)
 
-                token = jsonpath.jsonpath(json_response, "token")
+            token = jsonpath.jsonpath(json_response, "token")
+            print(token)
 
-                if token[0] == 'QpwL5tke4Pnpja7X4':
-                    print("Token is right ")
-                else:
-                    print("The Token is no right")
-        except Exception as error:
-            print(error)
+            if token[0] != 'QpwL5tke4Pnpja7X4':
+                return None
+            else:
+                return 1
+
+
+
+
 
     def update_request(self, url):
         updateDict = {

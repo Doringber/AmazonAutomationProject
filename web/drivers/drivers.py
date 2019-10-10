@@ -1,16 +1,41 @@
 from selenium import webdriver
 from selenium.webdriver import DesiredCapabilities
 from appium import webdriver as appiumWebriver
-from amazon.web.drivers.TestData import TestData
-from amazon.web.po.api_actions import ApiActions
+from selenium.webdriver.chrome.options import Options
+
+from amazon.web.drivers.tests_data import TestData
+from amazon.web.page_object.api_actions import ApiActions
+
+class ClassicalSingleton(object):
+    """
+    Singleton class based on overriding the __new__ method
+    """
+
+    def __new__(cls):
+        """
+        Override __new__ method to control the obj. creation
+        :return: Singleton obj.
+        """
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(ClassicalSingleton, cls).__new__(cls)
+
+        return cls.instance
+
+# @staticmethod
+# def get_driver():
+#     """
+#
+#     :return: Selenium driver
+#     """
+#     return webdriver.Chrome()
+
 
 
 class InitDriver(object):
 
     def initChrome(self):
         if TestData.BROWSER_TYPE.lower() == "chrome":
-            chrome_options = webdriver.ChromeOptions()
-            self.driver = webdriver.Chrome(TestData.CHROME_EXECUTABLE_PATH, options=chrome_options)
+            self.driver = webdriver.Chrome()
             return self.driver
 
     def initFirefox(self):
@@ -24,7 +49,6 @@ class InitDriver(object):
         if TestData.BROWSER_TYPE.lower() == "safari":
             self.driver = webdriver.Safari()
             return self.driver
-
 
     def initAppium(self):
         if TestData.BROWSER_TYPE.lower() == "appium":
@@ -78,13 +102,3 @@ class InitDriver(object):
             else:
                 self.driver = self.firefox
                 return self.driver
-
-
-
-
-
-
-
-
-
-

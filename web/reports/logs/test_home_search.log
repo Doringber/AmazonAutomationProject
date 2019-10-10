@@ -1,0 +1,39 @@
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63138/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:63138
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63138 "POST /session HTTP/1.1" 200 900
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63138/session/782ffc36217bf44a98f60dc114eb2b9c/url {"url": "https://www.kan.org.il", "sessionId": "782ffc36217bf44a98f60dc114eb2b9c"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63138 "POST /session/782ffc36217bf44a98f60dc114eb2b9c/url HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63138/session/782ffc36217bf44a98f60dc114eb2b9c/timeouts/implicit_wait {"ms": 5000.0, "sessionId": "782ffc36217bf44a98f60dc114eb2b9c"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63138 "POST /session/782ffc36217bf44a98f60dc114eb2b9c/timeouts/implicit_wait HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:63138/session/782ffc36217bf44a98f60dc114eb2b9c/window {"sessionId": "782ffc36217bf44a98f60dc114eb2b9c"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63138 "DELETE /session/782ffc36217bf44a98f60dc114eb2b9c/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63674/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:63674
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63674 "POST /session HTTP/1.1" 200 900
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63674/session/07aa585cfbf5d029fa6a3148a17fed62/url {"url": "https://www.kan.org.il", "sessionId": "07aa585cfbf5d029fa6a3148a17fed62"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63674 "POST /session/07aa585cfbf5d029fa6a3148a17fed62/url HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63674/session/07aa585cfbf5d029fa6a3148a17fed62/timeouts/implicit_wait {"ms": 5000.0, "sessionId": "07aa585cfbf5d029fa6a3148a17fed62"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63674 "POST /session/07aa585cfbf5d029fa6a3148a17fed62/timeouts/implicit_wait HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:63674/session/07aa585cfbf5d029fa6a3148a17fed62/window {"sessionId": "07aa585cfbf5d029fa6a3148a17fed62"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63674 "DELETE /session/07aa585cfbf5d029fa6a3148a17fed62/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63813/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:63813
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63813 "POST /session HTTP/1.1" 200 900
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63813/session/db3fc03e34004bf127d0fb885ec85d79/url {"url": "https://www.kan.org.il", "sessionId": "db3fc03e34004bf127d0fb885ec85d79"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63813 "POST /session/db3fc03e34004bf127d0fb885ec85d79/url HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63813/session/db3fc03e34004bf127d0fb885ec85d79/timeouts/implicit_wait {"ms": 5000.0, "sessionId": "db3fc03e34004bf127d0fb885ec85d79"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63813 "POST /session/db3fc03e34004bf127d0fb885ec85d79/timeouts/implicit_wait HTTP/1.1" 200 72
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:63813/session/db3fc03e34004bf127d0fb885ec85d79/window {"sessionId": "db3fc03e34004bf127d0fb885ec85d79"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:63813 "DELETE /session/db3fc03e34004bf127d0fb885ec85d79/window HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

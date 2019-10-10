@@ -5,7 +5,7 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from amazon.web.po.base import TestBase
+from amazon.web.page_object.base_class import TestBase
 
 
 class Actions(TestBase):
@@ -20,7 +20,9 @@ class Actions(TestBase):
         except Exception as error:
             name = str(self.driver.title)
             now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-            self.driver.get_screenshot_as_file('/Users/doringber/PycharmProjects/homework/amazon/web/reports/screenshots/screenshot-%s_%s.png' % (now, name))
+            self.driver.get_screenshot_as_file(
+                '/Users/doringber/PycharmProjects/homework/amazon/web/reports/screenshots/screenshot-%s_%s.png' % (
+                now, name))
             logging.error(
                 'Could not do the click on locator %s was click and this is the error %s' % (by_locator, error))
 
@@ -32,7 +34,6 @@ class Actions(TestBase):
             if web_element.text == element_text:
                 logging.debug("Element with locator %s was enter text: %s" % by_locator)
         except Exception as error:
-            # self.take_screenShot()
             logging.error('Element with locator: %s was not assert %s' % (by_locator, error))
 
     def enter_text(self, by_locator, text):
@@ -41,11 +42,8 @@ class Actions(TestBase):
             item = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator)).send_keys(text)
             logging.debug("Element with locator %s was enter text:  %s" % (by_locator, text))
             return item
-        except Exception as error:
-            name = str(self.driver.title)
-            now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-            self.driver.get_screenshot_as_file(self.PATH_SCREENSHOTS + '/screenshot-%s_%s.png' % (now, name))
-            logging.error('Element with locator:  %s was not enter text:  %s' % by_locator % error)
+        except Exception:
+            pass
 
     # this function checks if the web element whose locator has been passed to it, is enabled or not and returns
     # web element if it is enabled.
@@ -73,7 +71,26 @@ class Actions(TestBase):
             ActionChains(self.driver).move_to_element(element).perform()
             logging.debug("Item is doing hover to  %s " % by_locator)
         except Exception as error:
+            print(error)
+
+    def select_dropdown(self, by_locator, visable_text):
+        try:
+            element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
+            for item in element.options:
+                item.select_by_visible_text(visable_text)
+        except Exception as error:
+            print(error)
+
+    def print_driver_source_page(self):
+        try:
+            self.driver = self.driver.page_source
+            print(self.driver)
+        except Exception as error:
             logging.error('Item is not enabled %s' % error)
 
-    def driver_source_page(self):
-        pass
+    def get_url(self, url):
+        try:
+            self.driver = self.driver.get(url)
+            return self.driver
+        except Exception as error:
+            logging.error('Item is not enabled %s' % error)

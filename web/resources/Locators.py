@@ -46,7 +46,14 @@ class Locators():
 
     # --- hover --- #
     HOVER_TO = (By.ID, "nav-your-amazon")
-    ORDERS = (By.XPATH,"//span[@class='nav-line-2'][contains(text(),'Orders')]")
+    ORDERS = (By.XPATH,"//span[@class='nav-line-2'][contains(text(),'')]")
+    SELECT = (By.XPATH, "//select[@id='searchDropdownBox']")
+
+    # ---Kan --- #
+    SEARCH_BUTTON = (By.XPATH, "//img[@class='image-2']")
+    KAN_SEARCH_TEXT_BOX = (By.ID, "gsc-i-id1")
+    KAN_TEXT_RESULT = (By.ID,'resInfo-0')
+
 
 
 

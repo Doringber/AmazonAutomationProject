@@ -4,7 +4,7 @@ result_list = []
 list_three = []
 
 try:
-    con = sqlite3.connect('/Users/doringber/PycharmProjects/homework/amazon/web/po/test.db')
+    con = sqlite3.connect('/Users/doringber/PycharmProjects/homework/amazon/web/page_object/test.db')
 
     # print("open Database !!")
 except Exception as e:

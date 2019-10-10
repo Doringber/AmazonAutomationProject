@@ -4,11 +4,11 @@ from bs4 import BeautifulSoup
 
 from termcolor import colored
 
-from amazon.web.po import sql_connection
-from amazon.web.po.actions import Actions
+from amazon.web.page_object import sql_connection
+from amazon.web.page_object.actions import Actions
 from amazon.web.resources import csv_reader
 from amazon.web.resources.Locators import Locators
-from amazon.web.drivers.TestData import TestData
+from amazon.web.drivers.tests_data import TestData
 from amazon.web.resources.csv_reader import CsveReader
 
 
@@ -174,7 +174,7 @@ class SqlText(Actions):
         self.click(Locators.SEARCH_SUBMIT_BUTTON)
 
     def csv_devices_test(self):
-        devices = CsveReader.read(self,'/Users/doringber/PycharmProjects/homework/amazon/web/resources/devices.csv')
+        devices = CsveReader.read(self,'/Users/doringber/PycharmProjects/homework/amazon/web/resources/csv_files/devices.csv')
         print(devices)
 
         for i in range(len(devices)):
@@ -198,11 +198,39 @@ class HoverItems(Actions):
 
     def hover_between_items(self):
         print(colored('Step 1: hover to Today\'s deals ', 'blue'))
-        self.hover_to(Locators.HOVER_TO)
+
+        self.select_dropdown(Locators.SELECT, 'Baby')
         time.sleep(3)
+
         self.hover_to(Locators.ORDERS)
         time.sleep(3)
         self.hover_to(Locators.HOVER_TO)
+
+
+class KanHomePage(Actions):
+
+    def __init__(self, driver):
+        super().__init__(driver)
+
+    def search_home(self):
+
+        print(colored('Step 1: click on search ', 'blue'))
+        self.click(Locators.SEARCH_BUTTON)
+
+        print(colored('Step 2: enter text ', 'blue'))
+        self.enter_text(Locators.KAN_SEARCH_TEXT_BOX, "ביבי")
+        time.sleep(4)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
