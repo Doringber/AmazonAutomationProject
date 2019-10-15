@@ -32,6 +32,7 @@ class TestData():
     API_URL_GET = "https://reqres.in/api/users?page=2"
     API_URL_POST = "https://reqres.in/api/login"
 
+
     # --- PATHS ---
     SCREEN_PATH = '/Users/doringber/PycharmProjects/homework/amazon/web/reports/screenshots'
     LOGGING_PATH = "/Users/doringber/PycharmProjects/homework/amazon/web/reports/logs/"

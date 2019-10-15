@@ -108,7 +108,7 @@ class SignInPage(Actions):
         super().__init__(driver)
 
     def sign_in_failed(self):
-        login_name = CsveReader.read(self,'/Users/doringber/PycharmProjects/homework/amazon/web/resources/login.csv')
+        login_name = CsveReader.read(self,'/Users/doringber/PycharmProjects/homework/amazon/web/resources/csv_files/login.csv')
 
         for i in range(4):
             print(colored('Step 1: Click on the sign in button ', 'blue'))

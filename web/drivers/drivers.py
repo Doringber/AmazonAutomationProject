@@ -1,8 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver import DesiredCapabilities
 from appium import webdriver as appiumWebriver
-from selenium.webdriver.chrome.options import Options
-
 from amazon.web.drivers.tests_data import TestData
 from amazon.web.page_object.api_actions import ApiActions
 

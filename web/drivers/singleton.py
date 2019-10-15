@@ -44,50 +44,49 @@ class Driver(metaclass=MetaClassSingleton):
                 cap = DesiredCapabilities().FIREFOX
                 cap["marionette"] = False
                 self.connection = webdriver.Firefox(capabilities=cap, executable_path=TestData.FIREFOX_EXECUTABLE_PATH)
-                # elif TestData.BROWSER_TYPE.lower() == "safari":
-                #     self.connection = webdriver.Safari()
+            elif TestData.BROWSER_TYPE.lower() == "safari":
+                self.connection = webdriver.Safari()
+
+            elif TestData.BROWSER_TYPE.lower() == "appium":
+                self.connection = InitDriver.appiunSetUp()
+
+            elif TestData.BROWSER_TYPE.lower() == "api":
+                self.connection = ApiActions()
+
+            elif TestData.BROWSER_TYPE.lower() == "grid":
+                bro = "firefox"
+
+                # desiredCapabilities = {
+                #     "browserName": "chrome"
+                # }
                 #
-                # elif TestData.BROWSER_TYPE.lower() == "appium":
-                #     self.connection = InitDriver.appiunSetUp()
+                # self.driver = webdriver.Remote(command_executor='http://localhost:4446/wd/hub',
+                #                           desired_capabilities=desiredCapabilities)
+
+                # desiredCapabilities = {
+                #     "browserName": "firefox"
+                # }
                 #
-                # elif TestData.BROWSER_TYPE.lower() == "api":
-                #     self.connection = ApiActions()
-                #
-                # elif TestData.BROWSER_TYPE.lower() == "grid":
-                #     bro = "firefox"
-                #
-                #     # desiredCapabilities = {
-                #     #     "browserName": "chrome"
-                #     # }
-                #     #
-                #     # self.driver = webdriver.Remote(command_executor='http://localhost:4446/wd/hub',
-                #     #                           desired_capabilities=desiredCapabilities)
-                #
-                #     # desiredCapabilities = {
-                #     #     "browserName": "firefox"
-                #     # }
-                #     #
-                #     # self.driver = webdriver.Remote(command_executor='http://localhost:4446/wd/hub',
-                #     #                                desired_capabilities=desiredCapabilities)
-                #
-                #     self.chrome = webdriver.Remote(
-                #         command_executor='http://localhost:4446/wd/hub',
-                #         desired_capabilities=DesiredCapabilities.CHROME)
-                #     self.firefox = webdriver.Remote(
-                #         command_executor='http://localhost:4446/wd/hub',
-                #         desired_capabilities=DesiredCapabilities.FIREFOX)
-                #
-                #     if bro == "chrome":
-                #         self.connection = self.chrome
-                #         return self.connection
-                #     else:
-                #         self.connection = self.firefox
-                #         return self.connection
-                #     else:
-                #         print("There are few init")
-        self.connection.get("https://www.amazon.in")
-        # self.connection.implicitly_wait(5)
-        return self.connection
+                # self.driver = webdriver.Remote(command_executor='http://localhost:4446/wd/hub',
+                #                                desired_capabilities=desiredCapabilities)
+
+                self.chrome = webdriver.Remote(
+                    command_executor='http://localhost:4446/wd/hub',
+                    desired_capabilities=DesiredCapabilities.CHROME)
+                self.firefox = webdriver.Remote(
+                    command_executor='http://localhost:4446/wd/hub',
+                    desired_capabilities=DesiredCapabilities.FIREFOX)
+
+                if bro == "chrome":
+                    self.connection = self.chrome
+                    return self.connection
+                else:
+                    self.connection = self.firefox
+                    return self.connection
+
+            self.connection.get("https://www.amazon.in")
+            # self.connection.implicitly_wait(5)
+            return self.connection
 
 
 

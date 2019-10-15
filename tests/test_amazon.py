@@ -41,7 +41,6 @@ class TestAMZNSearch(TestBase):
     #     self.CartPage = CartPage(self.driver)
     #     self.CartPage.delete_item()
     #
-    @pytest.mark.base
     def test_sign_in_screen(self):
         self.signInScreen = SignInPage(self.driver)
         self.signInScreen.sign_in_failed()
@@ -57,12 +56,14 @@ class TestAMZNSearch(TestBase):
         self.sqlText = SqlText(self.driver)
         self.sqlText.sql_search_text_pixel()
         self.assertEqual(self.driver.find_element(*Locators.RESULT_SCREEN_SQL).text, '"Pixel"')
-    #
+
+    @pytest.mark.base
     def test_sql_enter_text_redmi(self):
         self.sqlText = SqlText(self.driver)
         self.sqlText.sql_search_text_redmi()
         self.assertEqual(self.driver.find_element(*Locators.RESULT_SCREEN_SQL).text, '"redmi 6"')
 
+    @pytest.mark.base
     def test_csv_device(self):
         self.sqlText = SqlText(self.driver)
         self.sqlText.csv_devices_test()

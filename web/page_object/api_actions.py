@@ -10,7 +10,7 @@ class ApiActions:
     def get_request(self, url):
         """Send GET request"""
         respone = requests.get(url)
-        if respone.status_code == 400:
+        if respone.status_code == 200:
             json_response = json.loads(respone.text)
             print(json_response)
 
@@ -20,30 +20,24 @@ class ApiActions:
         else:
             return None
 
-
-
     def post_request(self, url):
-            login = {
-                "email": "eve.holt@reqres.in",
-                "password": "cityslicka"
-            }
-            post = requests.post(url, login)
-            # if post.status_code == 200:
-                # print(post)
-            json_response = json.loads(post.text)
-            # print(json_response)
+        login = {
+            "email": "eve.holt@reqres.in",
+            "password": "cityslicka"
+        }
+        post = requests.post(url, login)
+        # if post.status_code == 200:
+        # print(post)
+        json_response = json.loads(post.text)
+        # print(json_response)
 
-            token = jsonpath.jsonpath(json_response, "token")
-            print(token)
+        token = jsonpath.jsonpath(json_response, "token")
+        print(token)
 
-            if token[0] != 'QpwL5tke4Pnpja7X4':
-                return None
-            else:
-                return 1
-
-
-
-
+        if token[0] != 'QpwL5tke4Pnpja7X4':
+            return None
+        else:
+            return 1
 
     def update_request(self, url):
         updateDict = {

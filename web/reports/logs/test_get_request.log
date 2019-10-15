@@ -1,4 +1,0 @@
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
-DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): reqres.in:443
-DEBUG:urllib3.connectionpool:https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None

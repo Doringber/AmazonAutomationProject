@@ -22,10 +22,12 @@ class TestBase(unittest.TestCase):
                 and TestData.BROWSER_TYPE.lower() != 'api':
             self.driver = DriverClass().get_driver()
             self.driver.get(TestData.BASE_URL)
+            self.driver.maximize_window()
             self.driver.implicitly_wait(5)
 
     def tearDown(self):
         print(colored(MESSAGE_TEST_FINISHED_RUNNING % self._testMethodName, "green"))
+
         if TestData.BROWSER_TYPE != 'appium' \
                 and TestData.BROWSER_TYPE.lower() != 'api':
             self.driver.close()
