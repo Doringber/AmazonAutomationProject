@@ -21,7 +21,7 @@ class Summary(object):
         chdir('..')
         system('cp /Users/doringber/PycharmProjects/homework/amazon/logs/%s .' % self.report_file_name)
         system('cp -rf /Users/doringber/PycharmProjects/homework/amazon/logs/assets .')
-        zip_file_name = '%s.zip' % self.file_name
+        zip_file_name = '/Users/doringber/PycharmProjects/homework/amazon/logs/%s.zip' % self.file_name
         system('zip -r %s assets %s' % (zip_file_name, self.report_file_name))
         system('rm -rf assets %s' % self.report_file_name)
         print(colored('Report zipped into %s' % zip_file_name, 'green'))
