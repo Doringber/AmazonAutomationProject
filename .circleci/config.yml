@@ -48,6 +48,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
+            cd tests
             py.test test_amazon.py -m 'base'
       - store_artifacts:
           path: test-reports
