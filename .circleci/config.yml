@@ -48,8 +48,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            cd /Users/doringber/PycharmProjects/homework/amazon/tests
-            py.test test_amazon.py -m 'base' --html=reports/report.html --self-contained-html
+            py.test test_amazon.py -m 'base'
       - store_artifacts:
           path: test-reports
           destination: test-reports
