@@ -4,6 +4,7 @@ import unittest
 from termcolor import colored
 from amazon.web.drivers.tests_data import TestData
 from amazon.web.drivers.singleton_decorator import DriverClass
+from amazon.web.resources.logger import writeLogs
 
 MESSAGE_TEST_START_RUNNING = '\n===============| Test "%s" Started Running |==============='
 MESSAGE_TEST_FINISHED_RUNNING = '===============| Test "%s" Finished Running |===============\n'
@@ -12,9 +13,10 @@ MESSAGE_TEST_FINISHED_RUNNING = '===============| Test "%s" Finished Running |==
 class TestBase(unittest.TestCase):
 
     def setUp(self):
-        logging.basicConfig(
-            filename=TestData.LOGGING_PATH + self._testMethodName + ".log",
-            level=logging.DEBUG)
+        # logging.basicConfig(
+        #     filename=TestData.LOGGING_PATH + self._testMethodName + ".log",
+        #     level=logging.DEBUG)
+        writeLogs.the_logger(self)
         print(colored(MESSAGE_TEST_START_RUNNING % self._testMethodName, "green"))
         self.PATH_SCREENSHOTS = TestData.SCREEN_PATH
 

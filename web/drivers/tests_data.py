@@ -31,6 +31,7 @@ class TestData():
     # --- API ---
     API_URL_GET = "https://reqres.in/api/users?page=2"
     API_URL_POST = "https://reqres.in/api/login"
+    API_URL_LOCAL_HOST = "http://127.0.0.1:8080/json"
 
 
     # --- PATHS ---

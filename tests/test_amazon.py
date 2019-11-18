@@ -2,6 +2,7 @@ import unittest
 
 import pytest
 
+from amazon.web.flask_app.tests.system.test_home import TestHome
 from amazon.web.page_object.api_actions import ApiActions
 from amazon.web.page_object.base_class import TestBase
 from amazon.web.resources.Locators import Locators
@@ -51,7 +52,7 @@ class TestAMZNSearch(TestBase):
     #     self.ImdbHomePage = ImdbHomePage(self.driver)
     #     self.ImdbHomePage.search_text_and_click()
 
-    @pytest.mark.base
+    # @pytest.mark.base
     def test_sql_enter_text_pixel(self):
         self.sqlText = SqlText(self.driver)
         self.sqlText.sql_search_text_pixel()
@@ -72,15 +73,20 @@ class TestAMZNSearch(TestBase):
     #     self.hover = HoverItems(self.driver)
     #     self.hover.hover_between_items()
 
-    def test_get_request(self):
-        self.api = ApiActions()
-        self.api.get_request(TestData.API_URL_GET)
-        self.assertEqual(self.api.get_request(TestData.API_URL_GET), None, "There is problem with the URL")
-
+    # @pytest.mark.base
     def test_post_request(self):
         self.api = ApiActions()
-        var = self.api.post_request(TestData.API_URL_POST)
-        self.assertEqual(var, 1, "You Token return as false ")
+        self.api.post_request(TestData.API_URL_LOCAL_HOST)
+        # self.assertEqual(var, 1, "You Token return as false ")
+
+    # @pytest.mark.base
+    def test_get_request(self):
+        self.api = ApiActions()
+        self.api.get_request(TestData.API_URL_LOCAL_HOST)
+        # self.assertEqual(self.api.get_request(TestData.API_URL_GET), None, "There is problem with the URL")
+
+
+
 
 
 if __name__ == '__main__':

@@ -1,0 +1,5 @@
+- run:
+          name: run tests
+          command: |
+            cd /Users/doringber/PycharmProjects/homework/amazon/tests
+            py.test test_amazon.py -m 'base' --html=reports/report.html --self-contained-html

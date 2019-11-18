@@ -15,7 +15,7 @@ class ApiActions:
             print(json_response)
 
             pages = jsonpath.jsonpath(json_response, "total_pages")
-            assert pages[0] == 2
+            # assert pages[0] == 2
 
         else:
             return None
@@ -26,18 +26,18 @@ class ApiActions:
             "password": "cityslicka"
         }
         post = requests.post(url, login)
-        # if post.status_code == 200:
-        # print(post)
+        if post.status_code == 200:
+            print(post)
         json_response = json.loads(post.text)
-        # print(json_response)
+        print(json_response)
 
-        token = jsonpath.jsonpath(json_response, "token")
-        print(token)
-
-        if token[0] != 'QpwL5tke4Pnpja7X4':
-            return None
-        else:
-            return 1
+        # token = jsonpath.jsonpath(json_response, "token")
+        # print(token)
+        #
+        # if token[0] != 'QpwL5tke4Pnpja7X4':
+        #     return None
+        # else:
+        #     return 1
 
     def update_request(self, url):
         updateDict = {
