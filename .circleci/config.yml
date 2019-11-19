@@ -28,7 +28,12 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements.txt
       - save_cache:
           paths:
             - ./venv
@@ -42,7 +47,8 @@ jobs:
       - run:
           name: run tests
           command: |
-            cd tests
+            . venv/bin/activate
+            cd /Users/doringber/PycharmProjects/homework/amazon/tests
             py.test test_amazon.py -m 'base'
       - store_artifacts:
           path: test-reports
