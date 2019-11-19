@@ -31,8 +31,6 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            python3 -m venv venv
-            . venv/bin/activate
             pip install -r requirements.txt
       - save_cache:
           paths:
@@ -47,7 +45,6 @@ jobs:
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
             cd tests
             py.test test_amazon.py -m 'base'
       - store_artifacts:
