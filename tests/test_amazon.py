@@ -52,7 +52,7 @@ class TestAMZNSearch(TestBase):
     #     self.ImdbHomePage = ImdbHomePage(self.driver)
     #     self.ImdbHomePage.search_text_and_click()
 
-    # @pytest.mark.base
+    @pytest.mark.base
     def test_sql_enter_text_pixel(self):
         self.sqlText = SqlText(self.driver)
         self.sqlText.sql_search_text_pixel()
