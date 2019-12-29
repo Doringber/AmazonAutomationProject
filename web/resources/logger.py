@@ -13,7 +13,7 @@ class writeLogs(object):
         # logger.setLevel(logging.INFO)
         #
         # # create a file handler
-        # handler = logging.FileHandler('reports/logsTest.log')
+        # handler = logging.FileHandler('html_reports/logsTest.log')
         # handler.setLevel(logging.DEBUG)
         #
         # # create a logging format

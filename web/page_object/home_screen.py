@@ -15,6 +15,7 @@ from amazon.web.resources.csv_reader import CsveReader
 class HomePage(Actions):
     """Home Page of Amazon India"""
 
+
     def search(self):
         print(colored('Step 1: Clear search box ', 'blue'))
         self.driver.find_element(*Locators.SEARCH_TEXTBOX).clear()

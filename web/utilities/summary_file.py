@@ -12,16 +12,16 @@ class Summary(object):
     def run_tests(self):
         run_command_line = 'export PYTHONPATH=`pwd`;' \
                             'cd /Users/doringber/PycharmProjects/homework/amazon;'\
-                           'py.test tests/test_amazon.py -m "%s" --disable-warnings --log-level=CRITICAL --html="logs/%s"' \
+                           'py.test tests/test_amazon.py -m "%s" --disable-warnings --log-level=CRITICAL --html="html_logs/%s"' \
                            % (self.markers, self.report_file_name)
         print(colored('Run CMD: %s' % run_command_line, 'green'))
         system(run_command_line)
 
     def cleanup(self):
         chdir('..')
-        system('cp /Users/doringber/PycharmProjects/homework/amazon/logs/%s .' % self.report_file_name)
-        system('cp -rf /Users/doringber/PycharmProjects/homework/amazon/logs/assets .')
-        zip_file_name = '/Users/doringber/PycharmProjects/homework/amazon/logs/%s.zip' % self.file_name
+        system('cp /Users/doringber/PycharmProjects/homework/amazon/html_logs/%s .' % self.report_file_name)
+        system('cp -rf /Users/doringber/PycharmProjects/homework/amazon/html_logs/assets .')
+        zip_file_name = '/Users/doringber/PycharmProjects/homework/amazon/html_logs/%s.zip' % self.file_name
         system('zip -r %s assets %s' % (zip_file_name, self.report_file_name))
         system('rm -rf assets %s' % self.report_file_name)
         print(colored('Report zipped into %s' % zip_file_name, 'green'))

@@ -21,7 +21,7 @@ class Actions(TestBase):
             name = str(self.driver.title)
             now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
             self.driver.get_screenshot_as_file(
-                '/Users/doringber/PycharmProjects/homework/amazon/web/reports/screenshots/screenshot-%s_%s.png' % (
+                '/Users/doringber/PycharmProjects/homework/amazon/web/html_reports/screenshots/screenshot-%s_%s.png' % (
                 now, name))
             logging.error(
                 'Could not do the click on locator %s was click and this is the error %s' % (by_locator, error))
@@ -42,8 +42,8 @@ class Actions(TestBase):
             item = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator)).send_keys(text)
             logging.debug("Element with locator %s was enter text:  %s" % (by_locator, text))
             return item
-        except Exception:
-            pass
+        except Exception as error:
+            print(error)
 
     # this function checks if the web element whose locator has been passed to it, is enabled or not and returns
     # web element if it is enabled.

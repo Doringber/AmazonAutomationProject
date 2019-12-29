@@ -51,8 +51,8 @@ jobs:
             cd /Users/doringber/PycharmProjects/homework/amazon/tests
             py.test test_amazon.py -m 'base'
       - store_artifacts:
-          path: test-reports
-          destination: test-reports
+          path: test-html_reports
+          destination: test-html_reports
 
 
 

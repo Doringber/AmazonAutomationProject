@@ -3,10 +3,12 @@ import json
 import jsonpath as jsonpath
 import requests
 
+from amazon.web.page_object.seleniuem_wrapper import SeleniumWrapper
+
 updateUrl = "https://reqres.in/api/users/2"
 
 
-class ApiActions:
+class ApiActions(SeleniumWrapper):
     def get_request(self, url):
         """Send GET request"""
         respone = requests.get(url)
@@ -15,7 +17,7 @@ class ApiActions:
             print(json_response)
 
             pages = jsonpath.jsonpath(json_response, "total_pages")
-            # assert pages[0] == 2
+            assert pages[0] == 2
 
         else:
             return None

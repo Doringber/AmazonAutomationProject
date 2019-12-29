@@ -33,10 +33,9 @@ class TestData():
     API_URL_POST = "https://reqres.in/api/login"
     API_URL_LOCAL_HOST = "http://127.0.0.1:8080/json"
 
-
     # --- PATHS ---
-    SCREEN_PATH = '/Users/doringber/PycharmProjects/homework/amazon/web/reports/screenshots'
-    LOGGING_PATH = "/Users/doringber/PycharmProjects/homework/amazon/web/reports/logs/"
+    SCREEN_PATH = '/Users/doringber/PycharmProjects/homework/amazon/web/html_reports/screenshots'
+    LOGGING_PATH = "/Users/doringber/PycharmProjects/homework/amazon/web/html_reports/html_logs/"
 
 
 
